@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radha Krishna Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>🦚 Temple Admin</h2>
+        <ul>
+            <li onclick="loadDashboard()">Dashboard</li>
+            <li onclick="loadUsers()">Devotees</li>
+            <li onclick="loadOrders()">Donations</li>
+            <li onclick="loadProducts()">Prasadam Store</li>
+            <li onclick="loadSettings()">Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Area -->
+    <div class="main">
+
+        <div class="header">
+            <h1 id="pageTitle">Temple Overview</h1>
+        </div>
+
+        <!-- Peacock Banner -->
+        <div class="banner">
+            <h2>Radha Krishna Temple Dashboard</h2>
+            <p>Manage devotees, donations & temple services</p>
+        </div>
+
+        <!-- Dynamic Content -->
+        <div id="contentArea"></div>
+
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
